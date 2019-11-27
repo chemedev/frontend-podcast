@@ -1,0 +1,17 @@
+$color-black: #060a24;
+$color-white: #ffffff;
+$color-btn: #00f3bb;
+$color-ul: #0000a3;
+
+@mixin flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin fontStyle($fontFamily, $fontSize, $lineHeight, $fontWeight: 400) {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+}

@@ -1,0 +1,316 @@
+body,
+main,
+header,
+nav,
+ul,
+figure,
+footer,
+.episodios,
+.nosotros,
+.entrevistas,
+.topicos,
+.containerSpotify,
+.novedades,
+.containerContacto {
+	@include flex;
+}
+
+body {
+	@include fontStyle(('IBM Plex Mono', monospace), 16px, normal);
+	color: $color-black;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+//! ________________________________________ NAV ________________________________________
+
+nav {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	img {
+		margin-left: 5%;
+		padding-bottom: 10px;
+		min-width: 24px;
+	}
+	input[type='checkbox'] {
+		display: none;
+		&:checked ~ ul {
+			display: flex;
+		}
+		&:checked ~ label span {
+			background: transparent;
+			&::before,
+			&::after {
+				top: 0;
+				background: $color-black;
+			}
+			&::before {
+				transform: rotate(315deg);
+			}
+			&::after {
+				transform: rotate(-315deg);
+			}
+		}
+	}
+
+	label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 10px;
+		margin-right: 5%;
+		cursor: pointer;
+		user-select: none;
+		span {
+			background: #000000;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: all 0.3s ease;
+			width: 18px;
+			&:before,
+			&:after {
+				background: #000000;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all 0.3s ease;
+				width: 100%;
+			}
+			&:before {
+				top: 5px;
+			}
+			&:after {
+				top: -5px;
+			}
+		}
+	}
+
+	ul {
+		align-items: stretch;
+		justify-content: space-evenly;
+		width: 100%;
+		height: 224px;
+		padding: 0 0 8px 5%;
+		background-color: #0000ec;
+		list-style-type: none;
+		display: none;
+		a {
+			@include fontStyle(('IBM Plex Mono', monospace), 16px, 24px);
+			text-transform: uppercase;
+			color: $color-white;
+		}
+	}
+}
+
+//! ________________________________________ HEADER ________________________________________
+
+header {
+	width: 100%;
+	align-items: flex-start;
+	div {
+		margin-left: 5%;
+	}
+	h1 {
+		display: none;
+	}
+	h2 {
+		margin-left: 0;
+		padding-right: 50px;
+		padding-top: 4.643%;
+		padding-bottom: 5%;
+		&::after {
+			content: '.';
+		}
+	}
+	span {
+		text-decoration: line-through;
+	}
+	.pMobile {
+		display: block;
+	}
+	.pDesktop {
+		display: none;
+	}
+	input[type='button'] {
+		margin-top: 36px;
+		margin-bottom: 24px;
+	}
+}
+
+p {
+	@include fontStyle(('IBM Plex Mono', monospace), 14px, 22px);
+	width: 90%;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+h1,
+h2 {
+	@include fontStyle(('IBM Plex Sans', sans-serif), 36px, 42px);
+	align-self: flex-start;
+	margin-left: 5%;
+	color: $color-black;
+}
+
+input[type='button'] {
+	@include fontStyle(('IBM Plex Mono', monospace), 16px, 22px, 500);
+	text-align: center;
+	align-self: center;
+	width: 90%;
+	max-width: 345px;
+	height: 48px;
+	background-color: $color-btn;
+	text-transform: uppercase;
+}
+
+//! ________________________________________ MAIN ________________________________________
+
+svg {
+	bottom: 0;
+	height: 10vw;
+	width: 100%;
+}
+
+.episodios {
+	justify-content: space-evenly;
+	background-image: linear-gradient(225deg, #0000ff 0%, $color-ul 100%);
+	width: 100%;
+	h2 {
+		margin-top: 10%;
+		margin-bottom: 6.565%;
+		color: $color-white;
+	}
+
+	.containerSpotify {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		flex-flow: row wrap;
+		iframe {
+			max-width: 584px;
+			margin: 0 3.44% 3.44% 3.44%;
+			&:last-child {
+				margin-bottom: 44.83%;
+			}
+		}
+	}
+}
+
+.nosotros {
+	img {
+		width: 100%;
+		max-width: 480px;
+		margin-top: -100px;
+	}
+	div {
+		@include flex;
+		align-self: flex-start;
+		h2 {
+			margin-top: 8.44%;
+			margin-bottom: 2.5%;
+		}
+		div {
+			@include flex;
+		}
+	}
+}
+
+.entrevistas {
+	h2 {
+		margin-top: 16.88%;
+		margin-bottom: 4.38%;
+	}
+	div {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 1440px;
+		img {
+			width: 100%;
+			max-width: 480px;
+		}
+	}
+}
+
+.topicos {
+	justify-content: center;
+	width: 90%;
+	h2 {
+		margin: 16.67% 0 8.334%;
+	}
+
+	div {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		width: 100%;
+		.containerTopicos {
+			flex-direction: row;
+			flex: 0 1 640px;
+			figure {
+				width: 100%;
+				flex-direction: column;
+				flex: 0 1 320px;
+				margin-bottom: 17.014%;
+				figcaption {
+					@include fontStyle(('IBM Plex Sans', sans-serif), 24px, normal, 600);
+					display: inline-block;
+					color: $color-black;
+					text-align: center;
+					margin-top: 4.514%;
+				}
+				&:last-child {
+					margin-bottom: 14.584%;
+				}
+			}
+		}
+	}
+}
+
+.novedades {
+	width: 100%;
+	background-image: linear-gradient(225deg, #0000ff 0%, $color-ul 100%);
+
+	h2 {
+		margin-top: 10%;
+		margin-bottom: 11.25%;
+		text-align: center;
+		color: $color-white;
+	}
+	input[type='button'] {
+		margin-bottom: 20.94%;
+	}
+}
+
+//! ________________________________________ FOOTER ________________________________________
+
+footer {
+	width: 100%;
+	p {
+		text-align: center;
+		margin-top: 7.5%;
+		margin-bottom: 5%;
+	}
+
+	.containerContacto {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 14.063%;
+		margin-bottom: 9.69%;
+	}
+}

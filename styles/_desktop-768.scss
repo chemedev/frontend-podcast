@@ -1,0 +1,204 @@
+@media screen and (min-width: 768px) {
+	h2 {
+		font-size: 48px;
+		margin-left: 15.433%;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	input[type='button'] {
+		font-size: 18px;
+		line-height: 24px;
+		&:hover {
+			cursor: pointer;
+			color: $color-white;
+			background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+		}
+	}
+
+	//! ________________________________________ NAV ________________________________________
+
+	nav {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		padding: 26px 6.945%;
+		height: 80px;
+		img {
+			margin: 0;
+			padding: 0;
+		}
+		label {
+			padding: 0;
+			display: none;
+		}
+
+		ul {
+			align-items: center;
+			width: 480px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			height: 30px;
+			margin: 0;
+			padding: 0;
+			background-color: transparent;
+			li {
+				margin-left: 48px;
+				height: 24px;
+			}
+			a {
+				color: $color-black;
+				&:hover {
+					color: $color-btn;
+					text-decoration: line-through;
+				}
+
+				&:active {
+					color: rgba(6, 10, 36, 0.56);
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+
+	//! ________________________________________ HEADER ________________________________________
+
+	header {
+		div {
+			margin-left: 13.89%;
+		}
+		h1 {
+			display: block;
+			font-size: 64px;
+			line-height: 70px;
+			margin-top: 8.334%;
+			padding-bottom: 0;
+			margin-left: 0;
+			&::after {
+				color: blue;
+				content: '.';
+			}
+		}
+		p {
+			max-width: 628px;
+		}
+		h2 {
+			display: none;
+		}
+		input[type='button'] {
+			align-self: flex-start;
+			width: 226px;
+			margin-top: 56px;
+			margin-bottom: 5px;
+		}
+		.pMobile {
+			display: none;
+		}
+		.pDesktop {
+			display: block;
+		}
+	}
+
+	//! ________________________________________ MAIN ________________________________________
+
+	.episodios {
+		justify-content: space-evenly;
+		background-image: linear-gradient(225deg, #0000ff 0%, $color-ul 100%);
+		width: 100%;
+		h2 {
+			margin: 2.917% 0 1.806% 200px;
+		}
+
+		.containerSpotify {
+			margin: 0 100px;
+			max-width: 1440px;
+			iframe {
+				margin: 0 0 72px 0;
+				&:last-child {
+					margin-bottom: 72px;
+				}
+			}
+		}
+	}
+
+	.nosotros {
+		flex-direction: row;
+		height: 660px;
+		img {
+			max-width: 457.6px;
+			width: auto;
+			margin-top: 0;
+			margin-top: -200px;
+		}
+		h2 {
+			margin-left: 0;
+			align-self: flex-start;
+		}
+		h2 + div {
+			align-items: flex-start;
+		}
+		p {
+			max-width: 464px;
+		}
+	}
+
+	.entrevistas {
+		h2 {
+			margin: 4.445% 13.889% 2.5%;
+		}
+	}
+
+	.topicos {
+		align-self: flex-start;
+		padding-left: 200px;
+		h2 {
+			margin: 4.939% 0 5.325%;
+			align-self: flex-start;
+		}
+		div {
+			justify-content: center;
+			.containerTopicos {
+				flex: 0 1 520px;
+				figure {
+					flex: 0 1 260px;
+				}
+			}
+		}
+	}
+
+	.novedades {
+		h2 {
+			align-self: center;
+			margin: 4.792% 0 2.5% 0;
+		}
+		input[type='button'] {
+			margin-bottom: 10.487%;
+		}
+	}
+
+	//! ________________________________________ FOOTER ________________________________________
+
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+		p {
+			width: auto;
+			text-align: left;
+			margin: 2.5% 0 2.2% 6.945%;
+			margin-top: 36px;
+			margin-bottom: 31px;
+		}
+		.containerContacto {
+			margin: 2.5% 6.945% 2.2%;
+			width: 234px;
+			padding: 0;
+			i {
+				font-size: 18px;
+			}
+		}
+	}
+}

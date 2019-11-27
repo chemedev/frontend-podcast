@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Podcastify</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="styles/css/styles.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav>
+			<img src="img/logo.svg" alt="logo bd" />
+			<input type="checkbox" name="navCheckbox" id="navCheckbox" />
+			<label for="navCheckbox"><span></span></label>
+			<ul>
+				<li><a href="#episodios">Episodios</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#entrevistas">Entrevistas</a></li>
+				<li><a href="#topicos">Tópicos</a></li>
+			</ul>
+		</nav>
+		<header>
+			<div>
+				<h1>Hello <span>world</span> pale blue dot</h1>
+				<h2>Hello <span>world</span> pale blue dot</h2>
+				<p class="pMobile">
+					Un podcast que explora el mundo de la programación. Nuevos episodios,
+					todos los jueves cada 15 días.
+				</p>
+				<p class="pDesktop">
+					El portal de podcasts que explora el mundo de la programación y la
+					tecnología. Nuevos episodios, todos los jueves cada 15 días.
+				</p>
+				<input type="button" value="Conocé más" />
+			</div>
+		</header>
+		<main>
+			<section class="episodios">
+				<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,0 100,0 0,100" />
+				</svg>
+				<h2 id="episodios">Episodios</h2>
+				<div class="containerSpotify">
+					<iframe
+						src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+						height="232"
+						allow="encrypted-media"
+						style="width: 100%;"
+					></iframe>
+					<iframe
+						src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+						height="232"
+						allow="encrypted-media"
+						style="width: 100%;"
+					></iframe>
+					<iframe
+						src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+						height="232"
+						allow="encrypted-media"
+						style="width: 100%;"
+					></iframe>
+					<iframe
+						src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+						height="232"
+						allow="encrypted-media"
+						style="width: 100%;"
+					></iframe>
+				</div>
+				<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="100,100 100,0 0,100" />
+				</svg>
+			</section>
+
+			<section class="nosotros">
+				<img src="img/phone.png" alt="telefono" />
+				<div>
+					<h2 id="nosotros">De dónde venimos&nbsp;</h2>
+					<div>
+						<p>
+							Our posturings, our imagined self-importance, the delusion that we
+							have some privileged position in the Universe, are challenged by
+							this point of pale light.
+						</p>
+						<p>
+							Our planet is a lonely speck in the great enveloping cosmic dark.
+							In our obscurity, in all this vastness, there is no hint that help
+							will come from elsewhere to save us from ourselves.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="entrevistas">
+				<h2 id="entrevistas">Invitada/os estelares</h2>
+				<div>
+					<img src="img/hopper.png" alt="grace hopper" />
+					<img src="img/bouman.png" alt="katie bouman" />
+					<img src="img/hamilton.png" alt="margaret hamilton" />
+					<img src="img/1950s.png" alt="a computer 1950s" />
+					<img src="img/eniac.png" alt="first programmable computer" />
+					<img src="img/kare.png" alt="susan kare" />
+				</div>
+			</section>
+
+			<section class="topicos">
+				<h2 id="topicos">Algunos de nuestros temas</h2>
+				<div>
+					<div class="containerTopicos">
+						<figure>
+							<img src="img/icon1.svg" alt="trabajo remoto" />
+							<figcaption>Trabajo remoto</figcaption>
+						</figure>
+						<figure>
+							<img src="img/icon2.svg" alt="repensando la programacion" />
+							<figcaption>Repensando la programación</figcaption>
+						</figure>
+					</div>
+					<div class="containerTopicos">
+						<figure>
+							<img src="img/icon3.svg" alt="bases del codigo" />
+							<figcaption>Bases del código</figcaption>
+						</figure>
+						<figure>
+							<img src="img/icon4.svg" alt="seguridad informatica" />
+							<figcaption>Seguridad informática</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section class="novedades">
+				<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon fill="white" points="0,0 0,100 100,0" />
+				</svg>
+				<h2 class="white">
+					¿Querés las últimas novedades?
+				</h2>
+				<input type="button" value="Escuchá los episodios" />
+			</section>
+		</main>
+
+		<footer>
+			<p>&#169; 2019— Hello blue pale dot</p>
+			<div class="containerContacto">
+				<a href="https://spotify.com" target="_blank"
+					><i class="fab fa-spotify"></i
+				></a>
+				<a href="https://instagram.com/acamica/" target="_blank"
+					><i class="fab fa-instagram"></i
+				></a>
+				<a href="https://twitter.com/acamica_com" target="_blank"
+					><i class="fab fa-twitter"></i
+				></a>
+				<a href="https://fb.com/acamica.org" target="_blank"
+					><i class="fab fa-facebook"></i
+				></a>
+				<a href="https://telegram.org" target="_blank"
+					><i class="fab fa-telegram"></i
+				></a>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/1206c45280.js"></script>
+	</body>
+</html>
